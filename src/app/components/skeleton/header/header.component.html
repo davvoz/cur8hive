@@ -1,0 +1,172 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div class="ex_tool">
+            <div class="example-button-container">
+                <button mat-icon-button (click)="toggleSidebar()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <div class="title_container">
+                <h1 class="title">CUR8</h1>
+                <h2 class="subtitle">&nbsp;&nbsp; Curate High Quality Contents</h2>
+            </div>
+            <div class="spacer">
+
+            </div>
+            <div class="spacer">
+
+            </div>
+            <!-- <div class="example-button-container" *ngIf="!isMobile">
+
+                <span class="optionContainer" [style.background-color]="lightTheme ? '#666' : '#fff'"
+                    [style.color]="lightTheme ? '#fff' : '#666'" [style.font-size]="lightTheme ? '10px' : '16px'"
+                    (click)="toggle('HIVE')">
+                    <img [src]="'../../assets/hive_.png'" style="width: 30px; height: 30px; margin-right: 10px;" />
+                    <span>
+                        HIVE {{lightTheme ? 'disabled' : 'enabled'}}
+                    </span>
+                </span>
+
+                <span class="optionContainer" [style.background-color]="lightTheme ? '#fff' : '#666'"
+                    [style.color]="lightTheme ? '#666' : '#fff'" [style.font-size]="lightTheme ? '16px' : '10px'"
+                    (click)="toggle('STEEM')">
+                    <img [src]="'../../assets/steem_traspa_piccola.png'"
+                        style="width: 30px; height: 30px; margin-right: 10px;" />
+                    <span>
+                        STEEM {{lightTheme ? 'enabled' : 'disabled'}}
+                    </span>
+                </span>
+            </div> -->
+        </div>
+    </mat-toolbar-row>
+    <!-- <mat-toolbar-row *ngIf="isMobile">
+        <span class="optionContainer" [style.background-color]="lightTheme ? '#666' : '#fff'"
+            [style.color]="lightTheme ? '#fff' : '#666'" [style.font-size]="lightTheme ? '10px' : '16px'"
+            [style.border]="lightTheme ? '' : '1px solid #666'" (click)="toggle('HIVE')">
+            <img [src]="'../../assets/hive_.png'" style="width: 30px; height: 30px; margin-right: 10px;" />
+            <span>
+                HIVE {{lightTheme ? 'disabled' : 'enabled'}}
+            </span>
+        </span>
+        <span class="optionContainer" [style.background-color]="lightTheme ? '#fff' : '#666'"
+            [style.color]="lightTheme ? '#666' : '#fff'" [style.font-size]="lightTheme ? '16px' : '10px'"
+            [style.border]="lightTheme ? '1px solid #666' : ''" (click)="toggle('STEEM')">
+            <img [src]="'../../assets/steem_traspa_piccola.png'"
+                style="width: 30px; height: 30px; margin-right: 10px;" />
+            <span>
+                STEEM {{lightTheme ? 'enabled' : 'disabled'}}
+            </span>
+        </span>
+    </mat-toolbar-row> -->
+</mat-toolbar>
+<style>
+    .mat-slide-toggle {
+        background-color: #666;
+        color: #fff;
+    }
+
+    .mat-slide-toggle-bar {
+        background-color: red;
+    }
+
+    .mat-slide-toggle-thumb {
+        background-color: red;
+    }
+
+    .optionContainer {
+        margin-right: 10px;
+        margin-left: 10px;
+        border: rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        background-color: #fff;
+        color: #666;
+        padding: 5px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .dashboard_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        width: 25%;
+        border-radius: 3px;
+        /*background del tema*/
+        background-color: #666;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .dashboard_btn:hover {
+        transition: background-color 0.3s ease;
+        background-color: #fff;
+        color: #666;
+    }
+
+    .dashboard_btn:hover h1 {
+        transition: font-size 0.3s ease;
+        color: #666;
+    }
+
+    .dashboard_btn h1 {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+        padding: 5px;
+        font-size: xx-large;
+    }
+
+    .dashboard_btn:hover {
+        transition: background-color 0.3s ease;
+        background-color: #fff;
+        color: 666;
+        cursor: pointer;
+    }
+
+    .dashboard_btn:hover h1 {
+        transition: font-size 0.3s ease;
+        color: #666;
+    }
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .title_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .ex_tool {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .example-button-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .subtitle {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 400;
+    }
+</style>
