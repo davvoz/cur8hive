@@ -1,0 +1,26 @@
+<div class="container">
+    <ng-container *ngIf="isLoading">
+        <mat-spinner></mat-spinner>
+    </ng-container>
+    <!-- búsqueda -->
+    <ng-container *ngIf="!isLoading">
+        <!-- <div class="search-container">
+            <input matInput type="text" placeholder="Search..." [(ngModel)]="search" class="search-input" />
+            <button mat-raised-button (click)="goSearch()" class="search-button">Search</button>
+            <button mat-raised-button (click)="resetSearch()" class="search-button">Reset</button>
+        </div> -->
+    </ng-container>
+    <ng-container *ngIf="!isLoading">
+        <div class="list-container">
+            <div *ngFor="let item of listaTransazioni" class="transaction-card">
+                <div class="transaction-content">
+                    <div class="line-container">
+                        <div class="line">{{item.voter}} voted {{item.author}}</div>
+                        
+                        <div class="line">Vote value: {{item.weight / 100}}%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>
