@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/mat-skeleton",
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,7 +65,8 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/cur8/"
+              "baseHref": "/cur8/",
+              "outputPath": "docs"
             },
             "development": {
               "optimization": false,
